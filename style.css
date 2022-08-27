@@ -144,12 +144,12 @@ header .head_wrapper .barger {
 }
 
 .service_wrapper {
-  padding: 1rem;
+  padding: 4rem 1rem;
 }
 
 .title_box {
   line-height: 30px;
-  padding-bottom: 3.5rem;
+  padding: 4rem 0;
 }
 .title_box h1 {
   position: relative;
@@ -177,21 +177,48 @@ header .head_wrapper .barger {
 }
 .service_wrap .service {
   text-align: center;
+  height: 321px;
   padding: 4rem 3rem;
   border: 1px solid rgb(229, 229, 229);
   transition: all 0.3s ease;
+  position: relative;
 }
-.service_wrap .service:hover {
-  box-shadow: 0px 0px 10px 0px #bababa;
+.service_wrap .service .icon {
+  width: 75px;
+  margin: auto;
+  transition: all 0.4s ease;
+  transform: translateY(35px);
+}
+.service_wrap .service .icon img {
+  width: 100%;
 }
 .service_wrap .service a {
   color: black;
+  display: block;
   font-size: 1.7rem;
+  transition: all 0.4s ease;
+  transform: translateY(-35px);
 }
 .service_wrap .service p {
   color: rgb(95, 93, 93);
   font-size: 0.8rem;
+  transition: all 0.4s ease;
   padding: 1rem 0;
+  opacity: 0;
+}
+.service_wrap .service:hover {
+  box-shadow: 0px 0px 10px 0px #bababa;
+}
+.service_wrap .service:hover .icon {
+  width: 60px;
+  transform: translateY(0);
+}
+.service_wrap .service:hover a {
+  font-size: 1.3rem;
+  transform: translateY(0);
+}
+.service_wrap .service:hover p {
+  opacity: 1;
 }
 
 @media (max-width: 940px) {

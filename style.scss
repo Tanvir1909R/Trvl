@@ -143,11 +143,11 @@ header {
 
 // service section -----------------------------
 .service_wrapper {
-  padding: 1rem;
+  padding: 4rem 1rem;
 }
 .title_box {
   line-height: 30px;
-  padding-bottom: 3.5rem;
+  padding:4rem 0;
   h1 {
     position: relative;
     padding-left: 2rem;
@@ -174,20 +174,47 @@ header {
   grid-gap: 20px;
   .service {
     text-align: center;
+    height: 321px;
     padding: 4rem 3rem;
     border: 1px solid rgb(229, 229, 229);
     transition: all .3s ease;
-    &:hover{
-      box-shadow: 0px 0px 10px 0px #bababa;
+    position: relative;
+    .icon{
+      width: 75px;
+      margin: auto;
+      transition: all .4s ease;
+      transform: translateY(35px);
+      img{
+        width: 100%;
+      }
     }
     a {
       color: black;
+      display: block;
       font-size: 1.7rem;
+      transition: all .4s ease;
+      transform: translateY(-35px);
     }
     p {
       color: rgb(95 93 93);
       font-size: 0.8rem;
+      transition: all .4s ease;
       padding: 1rem 0;
+      opacity: 0;
+    }
+    &:hover{
+      box-shadow: 0px 0px 10px 0px #bababa;
+    }
+    &:hover .icon{
+      width: 60px;
+      transform: translateY(0);
+    }
+    &:hover a{
+      font-size: 1.3rem;
+      transform: translateY(0);
+    }
+    &:hover p{
+      opacity: 1;
     }
   }
 }

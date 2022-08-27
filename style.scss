@@ -19,6 +19,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
+  transition: all .3s ease;
   z-index: 10;
   .head_wrapper {
     padding: 1rem;
@@ -44,10 +45,13 @@ header {
     }
   }
 }
+.header_active{
+  background-color: #424242;
+}
 
 @media (max-width: 813px) {
   header {
-    background-color: rgb(58 57 57);
+    background-color: #424242;
     .head_wrapper {
       position: relative;
       justify-content: space-between;

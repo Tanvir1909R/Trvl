@@ -23,6 +23,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
+  transition: all 0.3s ease;
   z-index: 10;
 }
 header .head_wrapper {
@@ -47,9 +48,13 @@ header .head_wrapper .barger {
   display: none;
 }
 
+.header_active {
+  background-color: #424242;
+}
+
 @media (max-width: 813px) {
   header {
-    background-color: rgb(58, 57, 57);
+    background-color: #424242;
   }
   header .head_wrapper {
     position: relative;

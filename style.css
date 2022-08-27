@@ -273,4 +273,10 @@ header .head_wrapper .barger {
 }
 .blogs .blog .blog_desc p {
   color: #424242;
+}
+
+@media (max-width: 769px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -235,4 +235,42 @@ header .head_wrapper .barger {
   .service_wrap {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+#blog {
+  padding: 5rem 0;
+}
+
+.blog_wrapper {
+  padding: 1rem;
+}
+.blog_wrapper .title_wrap {
+  background-color: #f2f4f5;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.blogs .blog {
+  text-align: center;
+}
+.blogs .blog .blog_img {
+  height: 262px;
+}
+.blogs .blog .blog_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .blog .blog_desc span {
+  color: #424242;
+}
+.blogs .blog .blog_desc h3 {
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.blogs .blog .blog_desc p {
+  color: #424242;
 }/*# sourceMappingURL=style.css.map */

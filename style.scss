@@ -279,86 +279,63 @@ header {
 
 // programs section
 .programs_wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-  .perallex {
-    position: realative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d ;
-    z-index: -1;
-    img {
-      position: absolute;
-      z-index: -1;
-      display: block ;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: translateZ(-10px) scale(3);
+  background: url(./img/perallex.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .4s ease;
+  background-attachment: fixed;
+  padding: 4rem 0;
+  .title_box {
+    color: white;
+    h1::after {
+      background-color: white;
     }
-    .join_wrapper {
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      padding: 0 12rem;
-      transform: translateZ(-5px) scale(1.5);
-      .title_box {
-        color: white;
-        h1::after {
-          background-color: white;
+    p {
+      color: white;
+    }
+  }
+  .table_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 30px;
+    .table {
+      .table_desc {
+        border: 1px solid #bababa;
+        color: #bababa;
+        padding: 1rem 3rem;
+        transition: all 0.3s ease;
+        h1 {
+          font-size: 5rem;
+          font-weight: 200;
+          padding: 2rem 0;
         }
         p {
+          padding: 1rem 0;
+        }
+        &:hover {
           color: white;
+          border: 1px solid white;
         }
       }
-      .table_wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 30px;
-        .table {
-          .table_desc {
-            border: 1px solid #bababa;
-            color: #bababa;
-            padding: 1rem 3rem;
-            transition: all 0.3s ease;
-            h1 {
-              font-size: 5rem;
-              font-weight: 200;
-              padding: 2rem 0;
-            }
-            p {
-              padding: 1rem 0;
-            }
-            &:hover {
-              color: white;
-              border: 1px solid white;
-            }
-          }
-          button {
-            border: 1px solid #171f31;
-            font-size: 1rem;
-            padding: 0.9rem 1.5rem;
-            border-radius: 20px;
-            background: #171f31;
-            color: white;
-            display: block;
-            margin: 35px auto;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            &:hover {
-              border: 1px solid #111724;
-              background: #111724;
-              transform: translateY(-10px);
-            }
-          }
+      button {
+        border: 1px solid #171f31;
+        font-size: 1rem;
+        padding: 0.9rem 1.5rem;
+        border-radius: 20px;
+        background: #171f31;
+        color: white;
+        display: block;
+        margin: 35px auto;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid #111724;
+          background: #111724;
+          transform: translateY(-10px);
         }
       }
-    }  
+    }
   }
   
 }

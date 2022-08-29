@@ -2,10 +2,10 @@ const slides = Array.from(document.querySelectorAll('.slide'));
 const slideSize = slides[0].getBoundingClientRect().width;
 const track = document.querySelector('.cerousel');
 const serviceWrap = document.querySelector('.service_wrap');
-const bloges = document.querySelector('.blogs')
+const bloges = document.querySelector('.blogs');
 // nav bar in mobile version 
 window.addEventListener('scroll',()=>{
-    const header = document.querySelector('#header')
+    const header = document.querySelector('#header');
     if(window.scrollY>0){
             header.classList.add('header_active')
         }else{
@@ -124,3 +124,4 @@ blogArr.map((blog)=>{
     `;
     bloges.innerHTML += html
 })
+

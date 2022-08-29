@@ -17,7 +17,7 @@ body {
 header {
   background: linear-gradient(88deg, #0909092e, #0909092e);
   width: 100%;
-  // position: fixed;
+  position: fixed;
   top: 0px;
   transition: all 0.3s ease;
   z-index: 10;
@@ -283,9 +283,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   background-attachment: fixed;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   .title_box {
     color: white;
     h1::after {
@@ -306,7 +306,7 @@ header {
         padding: 1rem 3rem;
         transition: all 0.3s ease;
         h1 {
-          font-size: 5rem;
+          font-size: clamp(2.5rem, 4vw, 5rem);
           font-weight: 200;
           padding: 2rem 0;
         }
@@ -337,5 +337,72 @@ header {
       }
     }
   }
-  
+}
+@media(max-width:1230px){
+  .programs_wrapper {
+    
+    .table_wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 30px;
+    }
+  }
+}
+@media(max-width:769px){
+  .programs_wrapper {
+    
+    .table_wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0 30px;
+    }
+  }
+}
+// event section -----------------------
+.event_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 40px;
+  padding: 1rem; 
+  .event {
+    border: 1px solid black;
+    padding: 5rem 3rem 3rem 3rem;
+    position: relative;
+    .date {
+      position: absolute;
+      top: -40px;
+      right: 30px;
+      font-size: 2rem;
+      background: black;
+      color: white;
+      padding: 0.7rem;
+      line-height: 30px;
+    }
+    strong {
+      color: #a09797;
+      font-weight: 400;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      padding: 1.5rem 0;
+    }
+    p {
+      color: #a09797;
+      padding-bottom: 3rem;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+      border-radius: 25px;
+      background: #202646;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+@media(max-width:769px){
+  .event_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

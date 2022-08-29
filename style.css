@@ -21,6 +21,7 @@ body {
 header {
   background: linear-gradient(88deg, rgba(9, 9, 9, 0.1803921569), rgba(9, 9, 9, 0.1803921569));
   width: 100%;
+  position: fixed;
   top: 0px;
   transition: all 0.3s ease;
   z-index: 10;
@@ -286,7 +287,7 @@ header .head_wrapper .barger {
   background-size: cover;
   transition: all 0.4s ease;
   background-attachment: fixed;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 .programs_wrapper .title_box {
   color: white;
@@ -309,7 +310,7 @@ header .head_wrapper .barger {
   transition: all 0.3s ease;
 }
 .programs_wrapper .table_wrapper .table .table_desc h1 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 4vw, 5rem);
   font-weight: 200;
   padding: 2rem 0;
 }
@@ -336,4 +337,67 @@ header .head_wrapper .barger {
   border: 1px solid #111724;
   background: #111724;
   transform: translateY(-10px);
+}
+
+@media (max-width: 1230px) {
+  .programs_wrapper .table_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 30px;
+  }
+}
+@media (max-width: 769px) {
+  .programs_wrapper .table_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 30px;
+  }
+}
+.event_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 40px;
+  padding: 1rem;
+}
+.event_wrapper .event {
+  border: 1px solid black;
+  padding: 5rem 3rem 3rem 3rem;
+  position: relative;
+}
+.event_wrapper .event .date {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  font-size: 2rem;
+  background: black;
+  color: white;
+  padding: 0.7rem;
+  line-height: 30px;
+}
+.event_wrapper .event strong {
+  color: #a09797;
+  font-weight: 400;
+}
+.event_wrapper .event h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+}
+.event_wrapper .event p {
+  color: #a09797;
+  padding-bottom: 3rem;
+}
+.event_wrapper .event button {
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  background: #202646;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 769px) {
+  .event_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

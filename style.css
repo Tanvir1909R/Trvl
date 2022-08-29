@@ -400,4 +400,42 @@ header .head_wrapper .barger {
   .event_wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+#product {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.product_wrapper {
+  width: 100%;
+  height: 70vh;
+}
+.product_wrapper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+.swiper-slide h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+  padding: 2rem 0;
+}
+.swiper-slide img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  display: block;
+}
+.swiper-slide .price {
+  font-size: 2rem;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

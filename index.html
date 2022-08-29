@@ -10,6 +10,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>TRVL</title>
   </head>
   <body>
@@ -160,9 +164,54 @@
                 <span>25<br/>Jul</span>
               </div>
               <strong>EVENT</strong>
-              <h1>2018 Lynch Canyon Trail Run</h1>
+              <h1>Outdoor Industry Clashes</h1>
               <p>About This Activity The Event The One Day Hike (ODH), organized by the Sierra Club Potomac Region Outings (SCPRO; ), has…</p>
               <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="product">
+        <div class="container">
+          <div class="title_box">
+            <h1>Our Product</h1>
+            <p>Shop</p>
+          </div>
+          <div class="product_wrapper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h1>TOUREST'S TENT</h1>
+                  <img src="./img/product/temt.png" alt="">
+                  <div class="price">$60</div>
+                </div>
+                <div class="swiper-slide">
+                  <h1>TOUREST'S TENT</h1>
+                  <img src="./img/product/bag.png" alt="">
+                  <div class="price">$60</div>
+                </div>
+                <div class="swiper-slide">
+                  <h1>TOUREST'S TENT</h1>
+                  <img src="./img/product/insto.png" alt="">
+                  <div class="price">$60</div>
+                </div>
+                <div class="swiper-slide">
+                  <h1>TOUREST'S TENT</h1>
+                  <img src="./img/product/rop.png" alt="">
+                  <div class="price">$60</div>
+                </div>
+                <div class="swiper-slide">
+                  <h1>TOUREST'S TENT</h1>
+                  <img src="./img/product/soks.png" alt="">
+                  <div class="price">$60</div>
+                </div>
+                <div class="swiper-slide">
+                  <h1>TOUREST'S TENT</h1>
+                  <img src="./img/product/shoe.png" alt="">
+                  <div class="price">$60</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -170,4 +219,25 @@
     </main>
   </body>
   <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        760: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        }
+      },
+    });
+  </script>
 </html>
